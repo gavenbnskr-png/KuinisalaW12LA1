@@ -1,0 +1,12 @@
+studentdict = {
+
+}
+studentdict["First Name: "] = "Anna"
+studentdict["LastName"] = "Dela Cruz"
+studentdict["BirthDate"] = 1997
+
+if "address" in studentdict:
+    print("Manila")
+else:
+    studentdict["Address: " ] = "Davao"
+print(studentdict)
