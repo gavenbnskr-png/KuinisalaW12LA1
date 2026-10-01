@@ -1,0 +1,21 @@
+Kuinisala_pizza = [("Hawaiian Pizza", 1000),
+                    ("Pepperoni Pizza", 1200),
+                    ("Pizzette", 1350),
+                    ("Pizza Margherita", 1500),
+                    ("Pizza Parmigiana", 1999)]
+
+print("                       ====PIZZA MENU====")
+print("\nPizza 1: Hawaiian Pizza (1000)")
+print("Pizza 2: Pepperoni Pizza (1200)")
+print("Pizza 3: Pizzette (1350)")
+print("Pizza 4: Pizza Margherita (1500)")
+print("Pizza 5: Pizza Parmigiana (1999)")
+
+Kuinisala_flavor = input("\nEnter chosen Pizza: ").title()
+for item in Kuinisala_pizza:
+    if item [1] == "flavor":
+        print("You have selected ", item[0])
+        print("Pizza Price: ", item[1])
+else:
+    print("Pizza Unavailable!")
+
