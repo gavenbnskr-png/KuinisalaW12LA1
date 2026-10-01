@@ -1,0 +1,37 @@
+while True:
+    print("Song 1: Für Elise - Beethoven")
+    print("Song 2: Moonlight Sonata - Beethoven")
+    print("Song 3: Symphony No. 5 - Beethoven")
+    print("Song 4: Clair De Lune - Debussy")
+    print("Song 5: Spring” from The Four Seasons - Vivaldi")
+    print("Song 6: Nutcracker Suite - Tchaikovsky")
+
+    Kuinisala_choice = int(input("\nEnter your song choice: "))
+
+    found = False
+
+    for Kuinisala_song in range(1,6):
+        if  Kuinisala_song == Kuinisala_choice:
+            found = True
+            break
+
+    if found:
+        if Kuinisala_choice == 1:
+            print("Playing Für Elise by Beethoven")
+    elif Kuinisala_choice == 2:
+        print("Playing Moonlight Sonata by Beethoven")
+    elif Kuinisala_choice == 3:
+        print("Playing Symphony No. 5 by Beethoven")
+    elif Kuinisala_choice == 4:
+        print("Playing Clair De Lune by Debussy")
+    elif Kuinisala_choice == 5:
+        print("Playing Spring from The Four Seasons by Vivaldi")
+    elif Kuinisala_choice == 6:
+        print("Playing Nutcracker Suite by Tchaikovsky")
+    else:
+        print("Failed to play!")
+
+    Kuinisala_again = input("\nTry again? (Y/N): ")
+
+    if Kuinisala_again.upper() != "Y":
+        break
