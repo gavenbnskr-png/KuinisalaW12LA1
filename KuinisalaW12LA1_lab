@@ -1,0 +1,35 @@
+salary = {
+    "E104": {
+        "EmpName": "Jermaine Paul",
+        "Dailyhrs": [40, 23.1, 42.3, 35]
+    },
+    "E023": {
+        "EmpName": "Capt Price",
+        "Dailyhrs": [39, 40, 42, 38, 40]
+    }
+}
+
+weeklybasicKuinisala = 9000
+rateperhourKuinisala = weeklybasicKuinisala / 40
+EnterEMPIDKuinisala = input("Enter Employee ID: ")
+if EnterEMPIDKuinisala in salary:
+    KuinisalaEmployee = salary[EnterEMPIDKuinisala]
+    totalweeklyhours = sum(KuinisalaEmployee["Dailyhrs"])
+    overtimeKuinisala = 0
+    grosspayKuinisala = (40 * rateperhourKuinisala) + overtimeKuinisala
+    print("Gross Pay:", grosspayKuinisala)
+    for dutyhoursKuinisala in KuinisalaEmployee["Dailyhrs"]:
+        if dutyhoursKuinisala > 8:
+            excesshoursKuinisala = dutyhoursKuinisala - 8
+            overtimeKuinisala += excesshoursKuinisala * 1.5 * rateperhourKuinisala
+
+    print("Employee Name:", KuinisalaEmployee["EmpName"])
+    print("Weekly Basic:", weeklybasicKuinisala)
+    print("Rate per Hour:", rateperhourKuinisala)
+    print("Total Weekly Hours:", totalweeklyhours)
+    print("Overtime:", overtimeKuinisala)
+
+    grosspay = (40 * rateperhourKuinisala) + overtimeKuinisala
+    print("Gross Pay:", grosspay)
+else:
+    print("Account or Employee ID not Yours")
