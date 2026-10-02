@@ -1,0 +1,17 @@
+
+fruits = ["apple", "banana", "orange"]
+
+colors = ("red", "green", "blue")
+
+print("Fruits:")
+for fruit in fruits:
+    print(fruit)
+
+print("\nColors:")
+for color in colors:
+    print(color)
+fruits.append("mango")
+print("\nUpdated Fruits:")
+print(fruits)
+print("\nFirst color:")
+print(colors[0])
